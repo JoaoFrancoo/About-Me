@@ -82,10 +82,12 @@
 </script>
 <script>
   
-    if (localStorage.getItem('preferredLanguage') === 'en') {
-       
-        window.location.href = 'about-me.html'; 
-    }
+  if (!localStorage.getItem('preferredLanguage')) {
+    document.querySelector('.overlay').style.display = 'block';
+    document.getElementById('languageSelect').style.display = 'block';
+} else if (localStorage.getItem('preferredLanguage') === 'en' && window.location.href.indexOf('about-me.html') === -1) {
+    window.location.href = 'about-me.html'; 
+}
 </script>
 <script>
     function openLanguageSelector() {
