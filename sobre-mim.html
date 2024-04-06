@@ -41,7 +41,7 @@
     <p>Eu sei, eu sei, fazer jogos no Roblox pode parecer dececionante, mas temos de ter em consideração que o Roblox está cada vez melhor em termos de qualidade de jogos e é nisso
         que nos devemos focar!</p>
         <br>
-        <p>Tenho uma empresa (fictícia) chamada <a href="#" id="openModal">Carlus Electum</a> onde coloco todos os meus projetos!</p>
+        <p>Tenho uma empresa (fictícia) chamada <a target="_blank" href="https://joaofrancoo.github.io/CarlusElectum/" >Carlus Electum</a> onde coloco todos os meus projetos!</p>
         <p>Alguns dos meus projetos são e-books, dispositivos de hardware, programas para telemóvel (que estão em desenvolvimento) entre muitos outros que estão por vir!</p>
 
 </h2>
@@ -64,40 +64,6 @@
     </svg>
 </a>
 </div>
-<div id="myModal" class="modal">
-
-    <div class="modal-content">
-        <span class="close">&times;</span>
-
-        <iframe src="https://joaofrancoo.github.io/CarlusElectum/" style="width: 100%; height: 80vh; border: none;"></iframe>
-    </div>
-</div>
-
-<script>
-
-    var modal = document.getElementById("myModal");
-
-    var link = document.getElementById("openModal");
-
-
-    var span = document.getElementsByClassName("close")[0];
-
-    link.onclick = function() {
-        modal.style.display = "block";
-    }
-
-
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
 <script>
     if (!localStorage.getItem('preferredLanguage')) {
         document.querySelector('.overlay').style.display = 'block';
